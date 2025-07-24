@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Админка</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Управление товарами</h1>
+    <form method="post">
+        <input type="text" name="name" placeholder="Название">
+        <input type="number" name="price" placeholder="Цена">
+        <button type="submit">Добавить</button>
+    </form>
+    <ul>
+        {% for item in items %}
+        <li>{{ item[1] }} - {{ item[2] }} ₽
+            <a href="{{ url_for('delete', item_id=item[0]) }}">Удалить</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

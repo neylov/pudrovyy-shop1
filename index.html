@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pudra Shop</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Добро пожаловать в Pudra Shop</h1>
+    <div class="product-list">
+        {% for item in items %}
+        <div class="product">
+            <h2>{{ item[1] }}</h2>
+            <p>Цена: {{ item[2] }} ₽</p>
+            <button>Купить</button>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

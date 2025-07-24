@@ -1,0 +1,27 @@
+
+body {
+    background-color: #0c0c0c;
+    font-family: 'Courier New', Courier, monospace;
+    color: #39FF14;
+    padding: 20px;
+}
+h1 {
+    font-size: 2em;
+    color: #39FF14;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product {
+    border: 2px solid #39FF14;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+button {
+    background: #39FF14;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+}
